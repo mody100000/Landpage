@@ -1,0 +1,132 @@
+a {
+  color: white !important;
+}
+a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+.bg {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: -1;
+}
+/* navbar */
+.navbar {
+  position: fixed !important;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.808);
+  /* padding: 30px; */
+  color: white;
+  z-index: 55;
+}
+.navbar .container {
+  text-align: center;
+}
+.navbar .container ul li {
+  list-style-type: none;
+  float: left;
+  padding: 5px;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.navbar .container ul li a {
+  padding: 10px;
+}
+.navbar .container ul li a :hover {
+  background-color: rgb(255, 104, 22);
+  transition: ease-in-out all 0.5s;
+}
+
+.navbar .container ul li .active {
+  border-radius: 10px;
+  background-color: rgb(255, 104, 22);
+  transition: ease-in-out 0.5s all;
+}
+.navbar .container .disactive:hover {
+  background-color: rgb(250, 137, 77);
+  transition: ease-in-out 0.5s all;
+  border-radius: 10px;
+}
+/* header  */
+.header {
+  background-image: url("../images/header.jpeg");
+  height: 700px;
+  text-align: center;
+  padding-top: 20%;
+  color: white;
+}
+.header p {
+  font-size: 20px;
+}
+.header h1 {
+  padding: 30px;
+  background-color: rgba(104, 104, 104, 0.2);
+  margin-bottom: 20px;
+}
+/* section 2 */
+.section2 {
+  padding: 100px 50px;
+  text-align: center;
+  background-color: rgba(233, 233, 233, 0.925);
+}
+.section2 h1 {
+  margin-bottom: 50px;
+}
+.section2 p {
+  font-size: 20px;
+}
+.section2 button {
+  margin-top: 50px;
+  padding: 30px 70px;
+  font-size: 30px;
+  background-color: rgb(255, 104, 22);
+  color: white;
+  border-radius: 20px;
+  border: 0;
+}
+.section2 button:hover {
+  background-color: rgb(255, 157, 104);
+  transition: ease-in-out all 0.5s;
+}
+/* section 3 */
+.section3 {
+  background-color: white;
+  color: rgb(163, 163, 163);
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 100px;
+}
+.section3 span {
+  font-size: small;
+}
+.section3 h1 {
+  color: black;
+}
+.section3 .raw {
+  margin-top: 50px;
+  padding: 70px;
+  padding-bottom: 130px;
+}
+.section3 .raw div {
+  float: left;
+}
+.section3 .raw i {
+  font-size: 45px;
+}
+/* section 4 */
+#section4 {
+  background-color: rgba(0, 0, 0, 0.808);
+  color: white;
+  text-align: center;
+  padding: 20.2% 0%;
+}
