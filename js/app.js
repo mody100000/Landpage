@@ -7,6 +7,14 @@ elements.forEach((element) => {
   }>section ${element}</a></li>`;
   nav_elements.innerHTML += nav_item;
 });
+// to remove active class from all links in the navbar
+function clearActive() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    //to remove the active class from all anchors
+    anchor.classList.remove("active");
+  });
+}
+
 //implement smooth scrolling
 function anchorLink(e) {
   const distanceFromTopScreen = (el) =>
@@ -19,10 +27,7 @@ function anchorLink(e) {
   const distance = distanceFromTopScreen(targetAnchor); //to know how far the target from the top screen using the above function
 
   window.scrollBy({ top: distance, left: 0, behavior: "smooth" }); //to scrool from the top screen to the target section smoothly
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    //to remove the active class from all anchors
-    anchor.classList.remove("active");
-  });
+  clearActive();
   this.classList.add("active"); //to add the active class to the clicked anchor
 }
 
@@ -58,9 +63,7 @@ const sections = document.querySelectorAll(".section"); //get the 4 sections
 
 function changeLinkState() {
   let index = sections.length;
-
-  while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-
+  while (--index && window.scrollY + 50 <= sections[index].offsetTop) {}
   links.forEach((link) => link.classList.remove("active"));
   links[index].classList.add("active");
 }
